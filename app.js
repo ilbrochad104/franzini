@@ -401,8 +401,8 @@ function setPageTitle(data) {
 /* ── MAIN INIT ───────────────────────────────────────────── */
 async function init() {
   // Rate limit the page load itself
-  if (!Security.rateLimit('pageload', 20, 60000)) {
-    Security.showRateLimitOverlay(60);
+  if (false) {
+    Security.showRateLimitOverlay(60); 
     return;
   }
 
