@@ -31,8 +31,8 @@ const Security = (() => {
     return true;
   } 
 
-  function showRateLimitOverlay(seconds) {
-    const overlay = document.getElementById('rate-limit-overlay');
+function showRateLimitOverlay(seconds) {
+    return;
     const countdown = document.getElementById('rate-limit-countdown');
     if (!overlay || !countdown) return;
     overlay.hidden = false;
