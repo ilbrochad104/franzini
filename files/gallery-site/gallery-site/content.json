@@ -1,0 +1,93 @@
+{
+  "site": {
+    "title": "My Gallery",
+    "subtitle": "A collection of moments",
+    "author": "Your Name",
+    "favicon": ""
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "type": "hero",
+      "title": "Welcome to My Gallery",
+      "description": "A visual journey through my work and experiences. Scroll down to explore.",
+      "backgroundImage": ""
+    },
+    {
+      "id": "collection-1",
+      "type": "gallery",
+      "title": "Collection One",
+      "description": "A brief description of this collection. Edit this text in content.json.",
+      "layout": "masonry",
+      "images": [
+        {
+          "src": "images/photo1.jpg",
+          "alt": "Description of photo 1",
+          "caption": "This is a caption for the first photo",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "images/photo2.jpg",
+          "alt": "Description of photo 2",
+          "caption": "Caption for photo two",
+          "width": 800,
+          "height": 1200
+        },
+        {
+          "src": "images/photo3.jpg",
+          "alt": "Description of photo 3",
+          "caption": "Another beautiful shot",
+          "width": 1200,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "collection-2",
+      "type": "gallery",
+      "title": "Collection Two",
+      "description": "More of my favorite shots from recent explorations.",
+      "layout": "grid",
+      "images": [
+        {
+          "src": "images/photo4.jpg",
+          "alt": "Description of photo 4",
+          "caption": "Exploring new places",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "images/photo5.jpg",
+          "alt": "Description of photo 5",
+          "caption": "Golden hour magic",
+          "width": 1200,
+          "height": 800
+        },
+        {
+          "src": "images/photo6.jpg",
+          "alt": "Description of photo 6",
+          "caption": "Details matter",
+          "width": 800,
+          "height": 800
+        }
+      ]
+    },
+    {
+      "id": "text-block",
+      "type": "text",
+      "title": "About This Gallery",
+      "body": "This is a free-form text section. You can write anything here — your story, your process, a quote you love. Just edit the 'body' field in content.json to change this text. You can also add multiple paragraphs by using the 'paragraphs' array below.",
+      "paragraphs": [
+        "Each photograph here represents a moment in time, captured and preserved.",
+        "I hope these images bring you as much joy as they brought me."
+      ]
+    }
+  ],
+  "contact": {
+    "show": true,
+    "email": "your@email.com",
+    "instagram": "yourhandle",
+    "twitter": ""
+  }
+}
