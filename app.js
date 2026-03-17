@@ -31,7 +31,7 @@ const Security = (() => {
     const now = Date.now();
     if (now - interactionWindow > 10000) { interactionCount = 0; interactionWindow = now; }
     interactionCount++;
-    if (interactionCount > 80 && !blocked) {
+    if (interactionCount > 200 && !blocked) {
       blocked = true;
       showRateLimitOverlay(30);
       return false;
