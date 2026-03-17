@@ -28,16 +28,8 @@ const Security = (() => {
   let unblockTimer = null;
 
   function checkInteraction() {
-    const now = Date.now();
-    if (now - interactionWindow > 10000) { interactionCount = 0; interactionWindow = now; }
-    interactionCount++;
-    if (interactionCount > 200 && !blocked) {
-      blocked = true;
-      showRateLimitOverlay(30);
-      return false;
-    }
-    return !blocked;
-  }
+    return true;
+  } 
 
   function showRateLimitOverlay(seconds) {
     const overlay = document.getElementById('rate-limit-overlay');
