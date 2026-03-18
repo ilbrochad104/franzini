@@ -411,7 +411,7 @@ async function init() {
 
   let data;
   try {
-    const cacheBust = `?v=${Math.floor(Date.now() / 60000)}`; // bust every 60s
+    const cacheBust = `?v=${Date.now()}`; // bust every 60s
     const res = await fetch(`content.json${cacheBust}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const text = await res.text();
