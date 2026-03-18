@@ -352,7 +352,7 @@ function buildFooter(data) {
   if (!footerLinks || !data.contact?.show) return;
 
   if (data.contact.email) {
-    const a = el('a', { href: `mailto:${Security.sanitizeText(data.contact.email)}` });
+    const a = el('a', { href: `mailto:${Security.sanitizeText(data.contact.email)}`, target: '_blank' });
     setText(a, 'Email');
     footerLinks.appendChild(a);
   }
