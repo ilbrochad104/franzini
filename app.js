@@ -213,8 +213,8 @@ function buildHero(section) {
   setText(h1, section.title);
   const p = el('p');
   setText(p, section.description);
-  const hint = el('div', { class: 'scroll-hint' });
-  setText(hint, 'scroll');
+  const hint = el('div', { class: 'scrolla-hint' });
+  setText(hint, 'scrolla');  
   content.appendChild(h1);
   content.appendChild(p);
   content.appendChild(hint);
@@ -380,7 +380,7 @@ function buildFooter(data) {
 /* ── SCROLL EFFECTS ──────────────────────────────────────── */
 function initScrollEffects() {
   const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
+  window.addEventListener('scrolla', () => {
     if (!navbar) return;
     navbar.classList.toggle('scrolled', window.scrollY > 80);
   }, { passive: true });

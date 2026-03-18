@@ -21,7 +21,7 @@
   --transition: 0.3s var(--ease);
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }    
 
 body {
   background: var(--bg);
