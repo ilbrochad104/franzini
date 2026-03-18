@@ -343,39 +343,7 @@ function buildNav(data) {
 }
 
 
-/* ── FOOTER BUILDER ──────────────────────────────────────── */
-function buildFooter(data) {
-  const year = new Date().getFullYear();
-  const author = data.site?.author || 'Gallery';
-  const footerAuthor = document.getElementById('footer-author');
-  if (footerAuthor) setText(footerAuthor, `© ${year} ${author}`);
 
-  const footerLinks = document.getElementById('footer-links'); 
-  if (!footerLinks || !data.contact?.show) return;
-
-  if (data.contact.email) {
-    const a = document.createElement('a');
-    a.href = `mailto:${data.contact.email}`;
-    a.textContent = 'Email';
-    footerLinks.appendChild(a);
-  }
-  if (data.contact.instagram) {
-    const a = document.createElement('a');
-    a.href = `https://instagram.com/${data.contact.instagram}`;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.textContent = 'Instagram';
-    footerLinks.appendChild(a);
-  }
-  if (data.contact.twitter) {
-    const a = document.createElement('a');
-    a.href = `https://x.com/${data.contact.twitter}`;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.textContent = 'X / Twitter';
-    footerLinks.appendChild(a);
-  }
-}
 
 
 /* ── SCROLL EFFECTS ──────────────────────────────────────── */
