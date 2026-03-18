@@ -284,6 +284,8 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--text-dim);
   transition: color var(--transition);
+  cursor: pointer;
+  pointer-events: all;
 }
 .footer-links a:hover { color: var(--text); }
 
