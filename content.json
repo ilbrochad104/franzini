@@ -1,16 +1,16 @@
 {
   "site": {
-    "title": "FRANZINI IL FROSCIO",
-    "subtitle": "A collection of moments",
-    "author": "Your Name",
+    "title": "FRANZINI OFFICIAL",
+    "subtitle": "il mio primo sito tuff",
+    "author": "LORENZO FRANZINI",
     "favicon": ""
   },
   "sections": [
     {
       "id": "intro",
       "type": "hero",
-      "title": "Welcome to My Gallery",
-      "description": "A visual journey through my work and experiences. Scroll down to explore.",
+      "title": "benvenuto nelle mie foto da neomelodico napoletano",
+      "description": "siccome sono il migliore della scuola e il più figo ho deciso di farvi vedere le mie foto da neomelodico sul mio sito",
       "backgroundImage": ""
     },
     {
