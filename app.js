@@ -78,8 +78,10 @@ function el(tag, attrs = {}, children = []) {
     else if (k === 'aria-label') element.setAttribute('aria-label', v);
     else if (k === 'role') element.setAttribute('role', v);
     else if (k === 'tabindex') element.tabIndex = v;
-    else element[k] = v;
-  }
+else if (k === 'target') element.setAttribute('target', v);
+else if (k === 'rel') element.setAttribute('rel', v);
+else element[k] = v;
+}
   for (const child of children) {
     if (typeof child === 'string') element.appendChild(document.createTextNode(child));
     else if (child instanceof Node) element.appendChild(child);
